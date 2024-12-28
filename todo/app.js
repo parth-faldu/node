@@ -23,7 +23,7 @@ const handleInput = (option) => {
         })
     }
     else if (option == 2) {
-        console.log("\nYour Todo Lists");
+        console.log("\nYour Todo Lists :");
         todos.forEach((task, index) => {
             console.log(`${index + 1}.${task}`);
         });
