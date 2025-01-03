@@ -58,7 +58,6 @@
 
                 if(response.ok){
                     fetchShortenedURL();
-                    alert('submitted :)');
                     event.target.reset();
                 }else{
                     const erroMessage = await response.text();
