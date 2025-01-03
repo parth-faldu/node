@@ -3,7 +3,7 @@ import { createServer } from 'http';
 import path from 'path';
 import crypto from 'crypto';
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const DATA_FILE = path.join("data", "links.json");
 
 const serveFile = async (res, filePath, contentType) => {
